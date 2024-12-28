@@ -31,6 +31,14 @@ const Features = () => {
       ease: "power2.inOut",
       duration: 1,
     });
+
+    animateWithGsap(".cta-container", {
+      y: 0,
+      opacity: 1,
+      ease: "power2.inOut",
+      duration: 1,
+      delay: 1, // Add delay to make it appear after other animations
+    });
   }, []);
 
   return (
@@ -102,13 +110,22 @@ const Features = () => {
                     any metal, making these our{" "}
                     <span className="text-white">
                       lightest Pro models ever.
-                    </span>
+                    </span>{" "}
                     You'll notice the difference the moment you pick one up.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Apple-Style CTA Reveal */}
+      <div className="cta-container absolute right-[40%] mt-10 opacity-0 flex items-center justify-center bg-glassmorphism w-80 h-14 rounded-full backdrop-blur-lg cursor-pointer">
+        <p className="cta-text text-lg ml-3 text-white">
+          More on design & display
+        </p>
+        <div className="cta-button bg-blue-500 text-white w-10 h-10 flex items-center justify-center rounded-full ml-2 bg-blue">
+          <span className="justify-center text-4xl mb-2"> + </span>
         </div>
       </div>
     </section>

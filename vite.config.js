@@ -1,15 +1,6 @@
-import { sentryVitePlugin } from "@sentry/vite-plugin";
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), sentryVitePlugin({
-    org: "jsma",
-    project: "javascript-react"
-  })],
-
-  build: {
-    sourcemap: true
-  }
-})
+  plugins: [],
+});

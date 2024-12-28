@@ -121,4 +121,15 @@ canvas {
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px];
   }
+
+  .cta-container {
+    @apply opacity-0 translate-y-[100px];
+  }
+}
+
+.bg-glassmorphism {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Thin, semi-transparent border */
+  backdrop-filter: blur(10px); /* Glass blur effect */
 }

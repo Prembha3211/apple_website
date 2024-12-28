@@ -10,6 +10,7 @@ import Lights from "./Lights";
 import Loader from "./Loader";
 import IPhone from "./IPhone";
 import { Suspense } from "react";
+import React from "react";
 
 const ModelView = ({
   index,
